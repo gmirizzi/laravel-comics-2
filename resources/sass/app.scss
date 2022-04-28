@@ -112,6 +112,20 @@ header {
 }
 
 #comic {
+    #topbar {
+        height: 100px;
+        background-color: var(--blue);
+        #container {
+            width: 900px;
+            margin: 0 auto;
+            position: relative;
+            height: 100%;
+            div {
+                position: absolute;
+                bottom: 20px;
+            }
+        }
+    }
     .container {
         width: 900px;
         #info {
