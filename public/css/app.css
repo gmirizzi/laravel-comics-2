@@ -117,9 +117,14 @@ header .container ul li a {
   cursor: pointer;
 }
 
+#comic .container {
+  width: 900px;
+}
+
 #comic #topbar {
   height: 100px;
   background-color: var(--blue);
+  margin-bottom: 3rem;
 }
 
 #comic #topbar #container {
@@ -129,36 +134,105 @@ header .container ul li a {
   height: 100%;
 }
 
-#comic #topbar #container div {
+#comic #topbar #container > div {
   position: absolute;
   bottom: 20px;
+  border: 1px solid white;
+  text-align: center;
+  background-color: #00a9d9;
+  padding-bottom: 5px;
 }
 
-#comic .container {
-  width: 900px;
+#comic #topbar #container > div a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
 }
 
-#comic .container #info {
+#comic #maincontent .container {
+  gap: 2em;
+}
+
+#comic #maincontent #info {
   width: 75%;
 }
 
-#comic .container #info #price {
+#comic #maincontent #info #price {
   display: flex;
   justify-content: space-between;
   background-color: #55ba59;
+  color: white;
+  padding: 1em;
+  margin: 1em 0;
 }
 
-#comic .container #info p {
+#comic #maincontent #info #price span {
+  color: #a4f591;
+}
+
+#comic #maincontent #info #price button {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  margin-left: 1em;
+  padding-left: 1em;
+  color: unset;
+}
+
+#comic #maincontent #info p {
   color: #626b80;
 }
 
-#comic .container h2 {
+#comic #maincontent h2 {
   text-transform: uppercase;
   color: #063f5e;
 }
 
-#comic .container #adv {
+#comic #maincontent #adv {
   width: 25%;
+  text-align: end;
+}
+
+#comic #maincontent #adv img {
+  width: 100%;
+}
+
+#comic #bottom {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  background-color: #ececec;
+}
+
+#comic #bottom .container {
+  gap: 1em;
+}
+
+#comic #bottom h3 {
+  color: #063f5e;
+  margin-bottom: 2em;
+}
+
+#comic #bottom .row {
+  display: flex;
+  padding: 1em 0;
+}
+
+#comic #bottom .row .title {
+  width: 30%;
+  color: #063f5e;
+}
+
+#comic #bottom .row .content {
+  width: 70%;
+  color: #42b6df;
+}
+
+#comic #bottom #talent {
+  width: 60%;
+}
+
+#comic #bottom #specs {
+  width: 40%;
 }
 
 footer {

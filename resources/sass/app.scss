@@ -61,16 +61,19 @@ header {
     color: white;
     text-align: center;
     padding-bottom: 1em;
+
     .container {
         position: relative;
         padding-top: 2.5em;
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 1em;
+
         a {
             text-decoration: none;
             color: unset;
         }
+
         .card {
             width: 150px;
             margin-bottom: 2.5em;
@@ -112,39 +115,113 @@ header {
 }
 
 #comic {
+    .container {
+        width: 900px;
+    }
+
     #topbar {
         height: 100px;
         background-color: var(--blue);
+        margin-bottom: 3rem;
+
         #container {
             width: 900px;
             margin: 0 auto;
             position: relative;
             height: 100%;
-            div {
+
+            &>div {
                 position: absolute;
                 bottom: 20px;
+                border: 1px solid white;
+                text-align: center;
+                background-color: #00a9d9ff;
+                padding-bottom: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    width: 100%;
+                }
             }
         }
     }
-    .container {
-        width: 900px;
+
+    #maincontent {
+        .container {
+            gap: 2em;
+        }
         #info {
             width: 75%;
+
             #price {
                 display: flex;
                 justify-content: space-between;
                 background-color: #55ba59ff;
+                color: white;
+                padding: 1em;
+                margin: 1em 0;
+                span {
+                    color: #a4f591ff;
+                }
+                button {
+                    height: 100%;
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 1em;
+                    padding-left: 1em;
+                    color: unset;
+                }
             }
+
             p {
                 color: #626b80ff;
             }
         }
+
         h2 {
             text-transform: uppercase;
             color: #063f5eff;
         }
-        #adv{
+
+        #adv {
             width: 25%;
+            text-align: end;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #bottom {
+        margin-top: 2rem;
+        padding: 2rem 0;
+        background-color: #ecececff;
+        .container {
+            gap: 1em;
+        }
+        h3 {
+            color: #063f5eff;
+            margin-bottom: 2em;
+        }
+        .row {
+            display: flex;
+            padding: 1em 0;
+            .title {
+                width: 30%;
+                color: #063f5eff;
+            }
+            .content {
+                width: 70%;
+                color: #42b6dfff;
+            }
+        }
+        #talent {
+            width: 60%;
+        }
+
+        #specs {
+            width: 40%;
         }
     }
 }
@@ -227,25 +304,29 @@ footer {
 #bluebar {
     background-color: #0282f9ff;
     padding: 3em;
+
     .container {
-      justify-content: space-evenly;
-      gap: 2em;
-      .item {
-        color: white;
-        display: flex;
-        gap: 1em;
-        align-items: center;
-        img {
-          height: 50px;
-          width: auto;
+        justify-content: space-evenly;
+        gap: 2em;
+
+        .item {
+            color: white;
+            display: flex;
+            gap: 1em;
+            align-items: center;
+
+            img {
+                height: 50px;
+                width: auto;
+            }
+
+            svg {
+                width: 50px;
+                fill: none;
+                stroke: #fff;
+                stroke-width: 1.7732;
+                stroke-miterlimit: 10;
+            }
         }
-        svg {
-          width: 50px;
-          fill: none;
-          stroke: #fff;
-          stroke-width: 1.7732;
-          stroke-miterlimit: 10;
-        }
-      }
     }
-  }
+}
