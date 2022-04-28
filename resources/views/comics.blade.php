@@ -4,7 +4,7 @@
       <div class="container">
         <div id="etichetta">CURRENT SERIES</div>
         @foreach ($fumetti as $item)
-        <a href="#">
+        <a href="{{route('comic', $item['id'])}}">
           <div class="card">
             <img src="{{ $item['thumb'] }}" alt="" />
             <div class="serie">{{ $item['series'] }}</div>
