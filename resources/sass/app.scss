@@ -111,6 +111,30 @@ header {
     }
 }
 
+#comic {
+    .container {
+        width: 900px;
+        #info {
+            width: 75%;
+            #price {
+                display: flex;
+                justify-content: space-between;
+                background-color: #55ba59ff;
+            }
+            p {
+                color: #626b80ff;
+            }
+        }
+        h2 {
+            text-transform: uppercase;
+            color: #063f5eff;
+        }
+        #adv{
+            width: 25%;
+        }
+    }
+}
+
 footer {
     background-image: url("./../../public/images/footer-bg.jpg");
 
