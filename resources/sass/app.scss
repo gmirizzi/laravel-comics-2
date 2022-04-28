@@ -213,7 +213,10 @@ header {
             }
             .content {
                 width: 70%;
-                color: #42b6dfff;
+                a{
+                    text-decoration: none;
+                    color: #42b6dfff;
+                }
             }
         }
         #talent {

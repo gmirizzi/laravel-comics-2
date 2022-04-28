@@ -41,6 +41,9 @@
                         Art by:
                     </div>
                     <div class="content">
+                        @foreach ($comic['artists'] as $artist)
+                        <a href="#">{{$artist}}</a>                            
+                        @endforeach
                     </div>
                 </div>
                 <hr>
@@ -49,6 +52,9 @@
                         Written by:
                     </div>
                     <div class="content">
+                        @foreach ($comic['writers'] as $writer)
+                        <a href="#">{{$writer}}</a>                             
+                        @endforeach
                     </div>
                 </div>
                 <hr>
@@ -80,7 +86,7 @@
                         On Sale Date:
                     </div>
                     <div class="content">
-                        {{$comic['sale_date']}}
+                        {{  date('M d Y', strtotime($comic['sale_date']))}}
                     </div>
                 </div>
                 <hr>

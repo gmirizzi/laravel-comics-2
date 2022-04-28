@@ -224,6 +224,10 @@ header .container ul li a {
 
 #comic #bottom .row .content {
   width: 70%;
+}
+
+#comic #bottom .row .content a {
+  text-decoration: none;
   color: #42b6df;
 }
 
