@@ -42,7 +42,7 @@
                     </div>
                     <div class="content">
                         @foreach ($comic['artists'] as $artist)
-                        <a href="#">{{$artist}}</a>                            
+                        <a href="#">{{$artist}}</a>@if (!$loop->last), @endif                        
                         @endforeach
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="content">
                         @foreach ($comic['writers'] as $writer)
-                        <a href="#">{{$writer}}</a>                             
+                        <a href="#">{{$writer}}</a>@if (!$loop->last), @endif                             
                         @endforeach
                     </div>
                 </div>
