@@ -4,10 +4,12 @@
       <div class="container">
         <div id="etichetta">CURRENT SERIES</div>
         @foreach ($fumetti as $item)
-        <div class="card">
-          <img src="{{ $item['thumb'] }}" alt="" />
-          <div class="serie">{{ $item['series'] }}</div>
-        </div>
+        <a href="#">
+          <div class="card">
+            <img src="{{ $item['thumb'] }}" alt="" />
+            <div class="serie">{{ $item['series'] }}</div>
+          </div>
+        </a>
         @endforeach
       </div>
       <button>LOAD MORE</button>

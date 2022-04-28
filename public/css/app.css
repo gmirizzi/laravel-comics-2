@@ -72,6 +72,11 @@ header .container ul li a {
   gap: 1em;
 }
 
+#comics .container a {
+  text-decoration: none;
+  color: unset;
+}
+
 #comics .container .card {
   width: 150px;
   margin-bottom: 2.5em;

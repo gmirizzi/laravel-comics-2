@@ -25,6 +25,10 @@ Route::get('/comics', function () {
     return view('comics', $data);
 })->name('comics');
 
+Route::get('/comics/{id}', function ($id) {
+    return view('comic');
+})->name('comic');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
